@@ -1,2 +1,13 @@
 # SCM syntax highlighting & preventing 3-way merges
 pixi.lock merge=binary linguist-language=YAML linguist-generated=true -diff
+
+# Keep our version of files shared with upstream (UNC-BIOS-512/codespace)
+.Rprofile merge=ours
+.devcontainer/Dockerfile merge=ours
+.devcontainer/devcontainer.json merge=ours
+.devcontainer/opencode.json merge=ours
+jupyter_config.py merge=ours
+notebooks/.gitkeep merge=ours
+notebooks/08-lecture-regression.ipynb merge=ours
+notebooks/solutions/09-lecture-model-basics.ipynb merge=ours
+notes.md merge=ours
