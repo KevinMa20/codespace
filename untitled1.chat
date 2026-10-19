@@ -1,0 +1,45 @@
+{
+  "messages": [
+    {
+      "type": "msg",
+      "time": 1791387962.4788828,
+      "body": "opencode",
+      "sender": "12b965495ecf49ddb6dd90e62cac0666",
+      "raw_time": false,
+      "metadata": {
+        "to_persona": "jupyter-ai-personas::jupyter_ai::JupyternautPersona",
+        "model": {
+          "id": null,
+          "settings": {}
+        },
+        "settings": {}
+      },
+      "id": "bb8e9a87-0e6b-45d6-ba4b-425d9f468242"
+    }
+  ],
+  "users": {
+    "hidden::jupyter_ai_system": {
+      "username": "hidden::jupyter_ai_system",
+      "name": "System",
+      "initials": null,
+      "avatar_url": null,
+      "display_name": "System",
+      "color": null,
+      "bot": true
+    },
+    "12b965495ecf49ddb6dd90e62cac0666": {
+      "color": "var(--jp-collaborator-color1)",
+      "avatar_url": null,
+      "initials": "AT",
+      "mention_name": "Anonymous-Thebe",
+      "name": "Anonymous Thebe",
+      "username": "12b965495ecf49ddb6dd90e62cac0666",
+      "display_name": "Anonymous Thebe",
+      "bot": false
+    }
+  },
+  "attachments": {},
+  "metadata": {
+    "id": "a9e45baf-7659-4c5f-b79b-fe269931891d"
+  }
+}
