@@ -1,37 +1,31 @@
 {
   "messages": [
     {
+      "time": 1791216031.9372044,
+      "id": "d103f66d-2f6a-4ccc-af85-97bf6ec95e06",
+      "body": "Hi",
+      "raw_time": false,
       "metadata": {
         "to_persona": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
-        "settings": {},
         "model": {
           "settings": {},
           "id": null
-        }
+        },
+        "settings": {}
       },
-      "body": "Hi",
-      "raw_time": false,
       "type": "msg",
-      "time": 1791216031.9372044,
-      "sender": "12b965495ecf49ddb6dd90e62cac0666",
-      "id": "d103f66d-2f6a-4ccc-af85-97bf6ec95e06"
+      "sender": "12b965495ecf49ddb6dd90e62cac0666"
     },
     {
       "id": "15625653-2225-4989-904c-b4cf463479e7",
+      "raw_time": false,
       "time": 1791216036.8446279,
-      "type": "msg",
       "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
       "mentions": [],
-      "raw_time": false,
-      "body": "Hi! How can I help you today?"
+      "body": "Hi! How can I help you today?",
+      "type": "msg"
     },
     {
-      "body": "Can you read opencode-demo.ipynb for me",
-      "raw_time": false,
-      "sender": "12b965495ecf49ddb6dd90e62cac0666",
-      "id": "70f85072-1a64-46ea-a084-efee9f69f51c",
-      "time": 1791216089.0334406,
-      "type": "msg",
       "metadata": {
         "settings": {},
         "to_persona": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
@@ -39,32 +33,36 @@
           "id": null,
           "settings": {}
         }
-      }
+      },
+      "raw_time": false,
+      "type": "msg",
+      "id": "70f85072-1a64-46ea-a084-efee9f69f51c",
+      "body": "Can you read opencode-demo.ipynb for me",
+      "sender": "12b965495ecf49ddb6dd90e62cac0666",
+      "time": 1791216089.0334406
     },
     {
+      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
       "raw_time": false,
-      "body": "",
-      "id": "44faa736-018e-4f14-b8dc-c43b65af3041",
-      "type": "msg",
-      "mentions": [],
       "time": 1791216090.3553886,
+      "mentions": [],
       "metadata": {
         "tool_calls": [
           {
+            "status": "completed",
             "kind": "search",
-            "raw_output": {
-              "output": "/workspaces/codespace/opencode-demo.ipynb",
-              "metadata": {
-                "truncated": false,
-                "count": 1.0
-              }
-            },
-            "tool_call_id": "call_8b92b930b14141b99d7db887",
             "title": "glob",
             "raw_input": {
               "pattern": "**/opencode-demo.ipynb"
             },
-            "status": "completed"
+            "tool_call_id": "call_8b92b930b14141b99d7db887",
+            "raw_output": {
+              "output": "/workspaces/codespace/opencode-demo.ipynb",
+              "metadata": {
+                "count": 1.0,
+                "truncated": false
+              }
+            }
           },
           {
             "raw_input": {
@@ -74,55 +72,57 @@
             "kind": "other",
             "status": "completed",
             "title": "jupyter-mcp_read_notebook",
+            "tool_call_id": "call_8b69b488d04441d98a5ea929",
             "raw_output": {
               "metadata": {
                 "truncated": false
               },
               "output": "```yaml\nkernelspec:\n  display_name: R 4.5.3 (xr)\n  language: R\n  name: xr\nlanguage_info:\n  codemirror_mode: ''\n  file_extension: .R\n  mimetype: text/x-R\n  name: R\n  nbconvert_exporter: ''\n  pygments_lexer: r\n  version: 4.5.3\n```\n\n### Cell 0\n\n#### Metadata\n\n```yaml\nexecution_count: 1\nid: dc720ad7-b2ac-4ba9-8133-7a5fe37662cf\ntype: code\n```\n\n#### Source\n\n```python\nlibrary('ggplot2')```\n\n### Cell 1\n\n#### Metadata\n\n```yaml\nexecution_count: 2\nid: d9c534dc-71a7-493c-8f1b-7fe64df2ed7d\ntype: code\n```\n\n#### Source\n\n```python\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()```\n\n#### Output\n\n```\nplot without title```"
-            },
-            "tool_call_id": "call_8b69b488d04441d98a5ea929"
+            }
           }
         ]
       },
-      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona"
+      "type": "msg",
+      "id": "44faa736-018e-4f14-b8dc-c43b65af3041",
+      "body": ""
     },
     {
+      "time": 1791216095.5178254,
+      "body": "The notebook has 2 cells:\n\n1. **Cell 0** (code): `library('ggplot2')`\n2. **Cell 1** (code): A `ggplot(mpg, aes(x = cty, y = hwy)) + geom_point()` scatter plot (output: \"plot without title\")\n\nIt's an R notebook using the `xr` (R 4.5.3) kernel.",
       "id": "1ba587f1-434a-4aa8-82b4-d4c17743ee34",
       "mentions": [],
-      "body": "The notebook has 2 cells:\n\n1. **Cell 0** (code): `library('ggplot2')`\n2. **Cell 1** (code): A `ggplot(mpg, aes(x = cty, y = hwy)) + geom_point()` scatter plot (output: \"plot without title\")\n\nIt's an R notebook using the `xr` (R 4.5.3) kernel.",
       "type": "msg",
-      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
       "raw_time": false,
-      "time": 1791216095.5178254
+      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona"
     }
   ],
   "users": {
-    "hidden::jupyter_ai_system": {
-      "name": "System",
-      "initials": null,
-      "display_name": "System",
-      "color": null,
-      "username": "hidden::jupyter_ai_system",
-      "bot": true,
-      "avatar_url": null
-    },
     "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona": {
-      "username": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
-      "initials": null,
-      "color": null,
       "bot": true,
+      "username": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
       "name": "OpenCode",
       "avatar_url": "/api/ai/avatars/jupyter-ai-personas%3A%3Ajupyter_ai_acp_client%3A%3AOpenCodeAcpPersona",
-      "display_name": "OpenCode"
+      "display_name": "OpenCode",
+      "color": null,
+      "initials": null
+    },
+    "hidden::jupyter_ai_system": {
+      "username": "hidden::jupyter_ai_system",
+      "bot": true,
+      "display_name": "System",
+      "avatar_url": null,
+      "initials": null,
+      "name": "System",
+      "color": null
     },
     "12b965495ecf49ddb6dd90e62cac0666": {
-      "initials": "AT",
       "bot": false,
       "name": "Anonymous Thebe",
       "display_name": "Anonymous Thebe",
-      "color": "var(--jp-collaborator-color1)",
-      "avatar_url": null,
       "mention_name": "Anonymous-Thebe",
+      "color": "var(--jp-collaborator-color1)",
+      "initials": "AT",
+      "avatar_url": null,
       "username": "12b965495ecf49ddb6dd90e62cac0666"
     }
   },
